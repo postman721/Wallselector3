@@ -45,7 +45,9 @@ class Main(QMainWindow):
             f.write('\n')
             f.write('\n')
             f.close()
-            sys.exit()     
+            sys.exit()
+        else:
+            sys.exit()			                 
     
 if __name__ == '__main__':
     app = QApplication(sys.argv)
