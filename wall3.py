@@ -27,7 +27,7 @@ class Main(QMainWindow):
     def openFileNameDialog(self):
         options = QFileDialog.Options()
         options |= QFileDialog.DontUseNativeDialog
-        fileName, _ = QFileDialog.getOpenFileName(self,"C", "/usr/share/wallpapers","All Files (*);;Python Files (*.py)", options=options)
+        fileName, _ = QFileDialog.getOpenFileName(self,"Choose wallpaper", "/usr/share/wallpapers","All Files (*);;Python Files (*.py)", options=options)
         if fileName:
             subprocess.Popen(['feh', '--bg-scale', fileName])
             name=getpass.getuser()
